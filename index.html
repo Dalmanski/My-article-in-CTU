@@ -14,8 +14,14 @@
 
     <header>
         <div class="logo">Dal.com</div>
-    </header>
-
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Article</a>
+            <a href="#">About</a>
+            <a href="#" id="loginBtn">Log-in</a>
+        </nav>
+    </header>    
+    
     <div class="page-title">CTU DANAO CAMPUS HIGHLIGHTS</div>
 
     <div class="article-container">
@@ -69,9 +75,40 @@
     </footer>
 
     <div id="modal" class="modal">
-        <span id="close" class="close">&times;</span> <!-- Display X at the top right -->
-        <img class="modal-content" id="modalImg">
+        <span id="closeImg" class="close">&times;</span> <!-- Display X at the top right -->
+        <img class="modal-content-in-img" id="modalImg">
         <div class="modal-caption" id="caption"></div> 
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content-in-form">
+            <span id="closeLogin" class="close">&times;</span>
+            <h2>Log-in</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Log-in</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="signupLink">Sign-up here</a></p>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content-in-form">
+            <span id="closeSignup" class="close">&times;</span>
+            <h2>Sign-up</h2>
+            <form>
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="signupEmail" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <button type="submit">Sign-up</button>
+            </form>
+        </div>
     </div>
     
 </body>
