@@ -265,6 +265,12 @@ a#signupLink:hover {
     text-decoration: underline;
 }
 
+label {
+    display: block;
+    margin: 10px 0 5px 0;
+    color: white;
+}
+
 /* Close button (X) Styles */
 .close {
     position: absolute;
@@ -279,7 +285,7 @@ a#signupLink:hover {
 footer {
     text-align: center;
     padding: 10px;
-    color: cyan;
+    color: rgba(0, 255, 255, 0.4);
     margin-top: 20px;
     border-top: 2px solid cyan;
     background-color: black;
@@ -289,27 +295,64 @@ footer {
     left: 0;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px 0;
-    color: white;
-}
-
 @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column; 
+        gap: 10px; 
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .nav-links a {
+        font-size: 1rem; 
+        padding: 8px 10px; 
+    }
+
+    .logo {
+        font-size: 1.2rem; 
+        margin-bottom: 10px; 
+    }
+
+    .modal-content-in-form {
+        max-width: 90%; 
+        padding: 15px;
+    }
+
+    .modal-content-in-form input {
+        font-size: 0.9rem; 
+        padding: 8px;
+    }
+
+    .modal-content-in-form button {
+        padding: 8px;
+        font-size: 0.9rem; 
+    }
+
     .page-title {
         font-size: 2rem;
     }
 
+    #homeSection h1, #aboutSection h1 {
+        font-size: 2.5rem; 
+    }
+
+    #homeSection p, #aboutSection p {
+        margin-left: 5%; 
+        margin-right: 5%; 
+        font-size: 1.1rem; 
+    }
+
     .image-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+        gap: 20px; 
     }
 
     .description {
         font-size: 1rem;
-    }
-
-    #homeSection p {
-        margin-left: 0; 
-        margin-right: 0; 
     }
 }

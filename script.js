@@ -72,11 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
         aboutSection.style.display = 'none';
 
         sectionToShow.style.display = 'block';
-        if (sectionToShow === articleSection){
-            document.body.style.overflow = 'auto'; // Meaning if this is scrollable or not
-        } else {
-            document.body.style.overflow = 'hidden';
-        }
     }
 
     homeLink.addEventListener('click', () => showSection(homeSection));
