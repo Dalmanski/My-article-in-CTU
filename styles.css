@@ -240,16 +240,6 @@ header {
     background-color: #0df2f2;
 }
 
-.password-container {
-    position: relative;
-    width: 100%; /* Ensures the input takes full width */
-}
-
-#password {
-    width: 100%;
-    padding-right: 40px; /* Adds space for the eye icon */
-}
-
 .toggle-eye {
     position: absolute;
     right: 10px;
