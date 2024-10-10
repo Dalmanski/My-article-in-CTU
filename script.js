@@ -60,16 +60,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const homeLink = document.getElementById('homeLink');
     const articleLink = document.getElementById('articleLink');
     const aboutLink = document.getElementById('aboutLink');
+    const contactLink = document.getElementById('contactLink');
 
     const homeSection = document.getElementById('homeSection');
     const articleSection = document.getElementById('articleSection');
     const aboutSection = document.getElementById('aboutSection');
+    const contactSection = document.getElementById('contactSection');
 
     // Function to show a specific section and hide others
     function showSection(sectionToShow) {
         homeSection.style.display = 'none';
         articleSection.style.display = 'none';
         aboutSection.style.display = 'none';
+        contactSection.style.display = 'none';
 
         sectionToShow.style.display = 'block';
     }
@@ -77,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     homeLink.addEventListener('click', () => showSection(homeSection));
     articleLink.addEventListener('click', () => showSection(articleSection));
     aboutLink.addEventListener('click', () => showSection(aboutSection));
+    contactLink.addEventListener('click', () => showSection(contactSection));
 
     showSection(homeSection);
 });

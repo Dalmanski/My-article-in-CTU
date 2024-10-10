@@ -11,7 +11,6 @@ body {
     min-height: 100vh;
 }
 
-
 body::before {
     content: '';
     position: fixed;
@@ -24,6 +23,7 @@ body::before {
     z-index: -1;
 }
 
+/* Header Design */
 header {
     display: flex;
     justify-content: space-between;
@@ -65,10 +65,8 @@ header {
     background-color: cyan;
 }
 
-.ctu-logo {
-    width: 200px; 
-    margin-bottom: 20px; 
-}
+/* Home Section Design */
+
 
 #homeSection, #aboutSection {
     text-align: center;
@@ -104,6 +102,19 @@ header {
     line-height: 2;
 }
 
+.ctu-logo {
+    width: 200px; 
+    margin-bottom: 20px; 
+}
+
+/* Article Section Design */
+#articleSection {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-bottom: 50px; /* Add margin bottom to avoid overlap with fixed footer */
+}
+
 .page-title {
     text-align: center;
     color: cyan;
@@ -111,13 +122,6 @@ header {
     font-size: 2.5rem;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px black;
-}
-
-#articleSection {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    margin-bottom: 50px; /* Add margin bottom to avoid overlap with fixed footer */
 }
 
 .image-grid {
@@ -166,6 +170,86 @@ header {
     line-height: 1.6;
 }
 
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid cyan;
+    box-shadow: 0 0 20px black;
+}
+
+/* Contact Us Section Design */
+.contact-form, .contact-info {
+    width: 48%;
+}
+
+.contact-form h2, .contact-info h2 {
+    color: cyan;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    outline: none;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: cyan;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0df2f2;
+}
+
+.contact-info h2 {
+    margin-bottom: 50px;
+}
+
+.contact-info p {
+    color: #b8b8b8;
+    font-size: 1.1rem;
+    margin: 15px 0;
+    line-height: 2;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: cyan;
+}
+
+/* When click image on Article */
 .modal {
     text-align: center;
     padding: 10px;
@@ -241,20 +325,6 @@ header {
     background-color: #0df2f2;
 }
 
-.toggle-eye {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 20px;
-    color: #ccc;
-}
-
-.toggle-eye:hover {
-    color: black;
-}
-
 /* Signup link style */
 a#signupLink {
     color: cyan;
@@ -283,6 +353,7 @@ label {
     cursor: pointer;
 }
 
+/* Footer Design */
 footer {
     text-align: center;
     padding: 10px;
@@ -296,6 +367,7 @@ footer {
     left: 0;
 }
 
+/* For adjust in mobile */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;

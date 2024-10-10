@@ -7,6 +7,7 @@
     <title>CTU Article</title>
     <link rel="icon" href="Pictures/CTU_new_logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 
@@ -17,6 +18,7 @@
             <a href="#" id="homeLink">Home</a>
             <a href="#" id="articleLink">Article</a>
             <a href="#" id="aboutLink">About</a>
+            <a href="#" id="contactLink">Contact</a>
             <a href="#" id="loginBtn">Log-in</a>
         </nav>
     </header>    
@@ -32,6 +34,61 @@
         </p>
     </div>
 
+    <div class="section" id="articleSection" style="display: none;">
+        <div class="page-title">CTU DANAO CAMPUS HIGHLIGHTS</div>
+        <div class="image-grid">
+            
+            <div class="image-section">
+                <img src="Pictures/Entrance.jpg" alt="New Administration Building">
+                <div class="text-content">
+                    <div class="title">New Administration Building</div>
+                    <div class="description">
+                        The newest addition to CTU Danao is the administration building. It serves as the main hub for campus management, housing the
+                        Campus Director and other important officials. This three-story building provides a better space for all stakeholders when
+                        dealing with CTU Danao.
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="Pictures/Fablab.jpg" alt="CTU Danao Fablab">
+                <div class="text-content">
+                    <div class="title">CTU Danao Fablab</div>
+                    <div class="description">
+                        Funded by DTI, it offers advanced technology like 3D printing to support research and innovation in Engineering and Technology.
+                        It provides services like 3D printing, laser cutting, and training on digital design for MSMEs, faculty, and students. Launched
+                        in 2019, the Fablab also helps the community by offering programs to enhance digital skills for business, education, and other
+                        fields.
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="Pictures/Centrum.jpg" alt="CTU Danao Hometel">
+                <div class="text-content">
+                    <div class="title">CTU Danao Hometel</div>
+                    <div class="description">
+                        Escape the busy city and visit this quiet 16-room spot within the University, where you can relax and take in a 360-degree view
+                        of the Northeastern Cebu landscape. You can also enjoy a swim in the new pool while watching the sunrise over the eastern coast.
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="Pictures/Sports.jpg" alt="Sports & Socio-cultural Center">
+                <div class="text-content">
+                    <div class="title">Sports & Socio-cultural Center</div>
+                    <div class="description">
+                        The center is used for sports and social activities. Its open space is great for physical education classes, from dance to sports
+                        lessons. It can also host small events like meetings, seminars, workshops, and exhibits related to sports or culture. The building
+                        has two offices to handle sports and social-related matters.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <div class="section" id="aboutSection" style="display: none;">
         <h1>About CTU Danao Campus</h1>
         <p>
@@ -42,47 +99,35 @@
         </p>
     </div>
 
-    <div class="section" id="articleSection" style="display: none;">
-        <div class="page-title">CTU DANAO CAMPUS HIGHLIGHTS</div>
-        <div class="image-grid">
-            <div class="image-section">
-                <img src="Pictures/Entrance.jpg" alt="New Administration Building">
-                <div class="text-content">
-                    <div class="title">New Administration Building</div>
-                    <div class="description">
-                        The newest addition to CTU Danao is the administration building. It serves as the main hub for campus management, housing the Campus Director and other important officials. This three-story building provides a better space for all stakeholders when dealing with CTU Danao.
-                    </div>
-                </div>
+    <div class="section" id="contactSection" style="display: none;">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Contact our team</h2>
+                <form>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone #:</label>
+                    <input type="text" id="phone" name="phone" required>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Contact Us</button>
+                </form>
             </div>
-
-            <div class="image-section">
-                <img src="Pictures/Fablab.jpg" alt="CTU Danao Fablab">
-                <div class="text-content">
-                    <div class="title">CTU Danao Fablab</div>
-                    <div class="description">
-                        Funded by DTI, it offers advanced technology like 3D printing to support research and innovation in Engineering and Technology. It provides services like 3D printing, laser cutting, and training on digital design for MSMEs, faculty, and students. Launched in 2019, the Fablab also helps the community by offering programs to enhance digital skills for business, education, and other fields.
-                    </div>
-                </div>
-            </div>
-
-            <div class="image-section">
-                <img src="Pictures/Centrum.jpg" alt="CTU Danao Hometel">
-                <div class="text-content">
-                    <div class="title">CTU Danao Hometel</div>
-                    <div class="description">
-                        Escape the busy city and visit this quiet 16-room spot within the University, where you can relax and take in a 360-degree view of the Northeastern Cebu landscape. You can also enjoy a swim in the new pool while watching the sunrise over the eastern coast.
-                    </div>
-                </div>
-            </div>
-
-            <div class="image-section">
-                <img src="Pictures/Sports.jpg" alt="Sports & Socio-cultural Center">
-                <div class="text-content">
-                    <div class="title">Sports & Socio-cultural Center</div>
-                    <div class="description">
-                        The center is used for sports and social activities. Its open space is great for physical education classes, from dance to sports lessons. It can also host small events like meetings, seminars, workshops, and exhibits related to sports or culture. The building has two offices to handle sports and social-related matters.
-                    </div>
-                </div>
+            <div class="contact-info">
+                <h2>CTU Danao Information</h2>
+                <p><strong>Address:</strong> Cebu Technological University, Danao City, Cebu, Philippines</p>
+                <p><strong>Contact Number:</strong> (032) 354 3660</p>
+                <p><strong>Email:</strong> info-danao@ctu.edu.ph</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/ctudanaoofficial" target="_blank">
+                        <i class="fab fa-facebook fa-2x social-logo"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ctupremier2532/featured" target="_blank">
+                        <i class="fab fa-youtube fa-2x social-logo"></i>
+                    </a>
+                </div>                
             </div>
         </div>
     </div>
@@ -127,5 +172,6 @@
             </form>
         </div>
     </div>
+
 </body>
 </html>
