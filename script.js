@@ -63,12 +63,14 @@ function toggleHeader() {
 
     if (header.classList.contains('collapsed')) {
         header.classList.remove('collapsed');
-        expandBtn.textContent = 'Expand';
+        expandBtn.textContent = 'Close';
         navLinks.style.display = 'flex';
+        header.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
     } else {
         header.classList.add('collapsed');
-        expandBtn.textContent = 'Collapse';
+        expandBtn.textContent = 'Expand';
         navLinks.style.display = 'none';
+        header.style.backgroundColor = 'black';
     }
 }
 
