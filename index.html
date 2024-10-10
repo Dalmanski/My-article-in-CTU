@@ -5,28 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTU Article</title>
-    <link rel="icon" href="Pictures\CTU_new_logo.png" type="image/png">
+    <link rel="icon" href="Pictures/CTU_new_logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-
     <header>
         <div class="logo">Dal.com</div>
         <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Article</a>
-            <a href="#">About</a>
+            <a href="#" id="homeLink">Home</a>
+            <a href="#" id="articleLink">Article</a>
+            <a href="#" id="aboutLink">About</a>
             <a href="#" id="loginBtn">Log-in</a>
         </nav>
     </header>    
-    
-    <div class="page-title">CTU DANAO CAMPUS HIGHLIGHTS</div>
 
-    <div class="article-container">
+    <div class="section" id="homeSection">
+        <img src="Pictures/CTU_new_logo.png" alt="CTU Logo" class="ctu-logo">
+        <h1>CTU DANAO CAMPUS HIGHLIGHTS</h1>
+        <p>
+            Welcome to the CTU Danao Campus, where innovation meets tradition. Nestled in the heart of Danao City, our campus 
+            serves as a beacon of excellence in education and community engagement. With state-of-the-art facilities and a vibrant 
+            learning environment, we are dedicated to nurturing the next generation of leaders and innovators. Join us as we explore 
+            the highlights of our campus, showcasing the diverse programs and opportunities available to our students and the community.
+        </p>
+    </div>
+
+    <div class="section" id="aboutSection" style="display: none;">
+        <h1>About CTU Danao Campus</h1>
+        <p>
+            CTU Danao Campus is part of the Cebu Technological University system, committed to providing quality education 
+            through a variety of programs in engineering, technology, and management. Our campus fosters a culture of 
+            collaboration and creativity, encouraging students to engage in research, community service, and personal development. 
+            With a focus on hands-on learning and industry partnerships, we prepare our graduates for the challenges of the modern workforce.
+        </p>
+    </div>
+
+    <div class="section" id="articleSection" style="display: none;">
+        <div class="page-title">CTU DANAO CAMPUS HIGHLIGHTS</div>
         <div class="image-grid">
-
             <div class="image-section">
                 <img src="Pictures/Entrance.jpg" alt="New Administration Building">
                 <div class="text-content">
@@ -42,7 +60,7 @@
                 <div class="text-content">
                     <div class="title">CTU Danao Fablab</div>
                     <div class="description">
-                        It's funded by DTI, offers advanced technology like 3D printing to support research and innovation in Engineering and Technology. It provides services like 3D printing, laser cutting, and training on digital design for MSMEs, faculty, and students. Launched in 2019, the Fablab also helps the community by offering programs to enhance digital skills for business, education, and other fields.
+                        Funded by DTI, it offers advanced technology like 3D printing to support research and innovation in Engineering and Technology. It provides services like 3D printing, laser cutting, and training on digital design for MSMEs, faculty, and students. Launched in 2019, the Fablab also helps the community by offering programs to enhance digital skills for business, education, and other fields.
                     </div>
                 </div>
             </div>
@@ -66,7 +84,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -110,6 +127,5 @@
             </form>
         </div>
     </div>
-    
 </body>
 </html>

@@ -1,14 +1,16 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0; /* Ensure padding is 0 */
     color: white;
     background-image: url("Pictures/Oval.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    min-height: 100vh; /* Optional: Ensure body takes at least the full height */
 }
+
 
 body::before {
     content: '';
@@ -32,6 +34,7 @@ header {
     border-right: 2px; 
     border-bottom: 2px solid cyan;
     position: fixed;  
+    top: 0;
     left: 0;
     right: 0; /* Full width */
 }
@@ -61,21 +64,59 @@ header {
     background-color: cyan;
 }
 
-.page-title {
+.ctu-logo {
+    width: 200px; 
+    margin-bottom: 20px; 
+}
+
+#homeSection, #aboutSection {
     text-align: center;
-    color: cyan;
-    padding: 80px 20px 20px; /* Add top padding to avoid overlap with fixed header */
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    box-shadow: 0 0 20px black;
+}
+
+#homeSection {
+    margin-top: 100px;
+}
+
+#aboutSection {
+    margin-top: 200px;
+}
+
+#homeSection h1, #aboutSection h1 {
+    font-size: 50px;
+    text-align: center;
     text-shadow: 2px 2px 5px black;
 }
 
-.article-container {
+#homeSection p, #aboutSection p {
+    margin-left: 10%; 
+    margin-right: 10%; 
+    text-align: justify;
+    font-size: 22px;
+    text-shadow: 2px 2px 5px black; 
+}
+
+#homeSection p {
+    line-height: 1.7;
+}
+
+#aboutSection p {
+    line-height: 2;
+}
+
+.page-title {
+    text-align: center;
+    color: cyan;
+    padding: 50px; /* Add top padding to avoid overlap with fixed header */
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px black;
+}
+
+#articleSection {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    overflow-y: auto; /* Allow scrolling */
+    margin-bottom: 50px; /* Add margin bottm to avoid overlap with fixed footer */
 }
 
 .image-grid {
@@ -199,15 +240,28 @@ header {
     background-color: #0df2f2;
 }
 
-/* Close button (X) Styles */
-.close {
+.password-container {
+    position: relative;
+    width: 100%; /* Ensures the input takes full width */
+}
+
+#password {
+    width: 100%;
+    padding-right: 40px; /* Adds space for the eye icon */
+}
+
+.toggle-eye {
     position: absolute;
-    top: 15px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.toggle-eye:hover {
+    color: black;
 }
 
 /* Signup link style */
@@ -221,13 +275,28 @@ a#signupLink:hover {
     text-decoration: underline;
 }
 
+/* Close button (X) Styles */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 footer {
     text-align: center;
     padding: 10px;
     color: cyan;
     margin-top: 20px;
     border-top: 2px solid cyan;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 label {
@@ -235,7 +304,6 @@ label {
     margin: 10px 0 5px 0;
     color: white;
 }
-
 
 @media screen and (max-width: 768px) {
     .page-title {
@@ -248,5 +316,10 @@ label {
 
     .description {
         font-size: 1rem;
+    }
+
+    #homeSection p {
+        margin-left: 0; 
+        margin-right: 0; 
     }
 }

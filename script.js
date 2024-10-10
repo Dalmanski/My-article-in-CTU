@@ -55,3 +55,33 @@ window.onclick = function(event) {
         signupModal.style.display = "none";
     }
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+    const homeLink = document.getElementById('homeLink');
+    const articleLink = document.getElementById('articleLink');
+    const aboutLink = document.getElementById('aboutLink');
+
+    const homeSection = document.getElementById('homeSection');
+    const articleSection = document.getElementById('articleSection');
+    const aboutSection = document.getElementById('aboutSection');
+
+    // Function to show a specific section and hide others
+    function showSection(sectionToShow) {
+        homeSection.style.display = 'none';
+        articleSection.style.display = 'none';
+        aboutSection.style.display = 'none';
+
+        sectionToShow.style.display = 'block';
+        if (sectionToShow === articleSection){
+            document.body.style.overflow = 'auto'; // Meaning if this is scrollable or not
+        } else {
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    homeLink.addEventListener('click', () => showSection(homeSection));
+    articleLink.addEventListener('click', () => showSection(articleSection));
+    aboutLink.addEventListener('click', () => showSection(aboutSection));
+
+    showSection(homeSection);
+});
