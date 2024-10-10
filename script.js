@@ -56,6 +56,22 @@ window.onclick = function(event) {
     }
 };
 
+function toggleHeader() {
+    const header = document.querySelector('header');
+    const navLinks = document.querySelector('.nav-links');
+    const expandBtn = document.querySelector('.expand-btn');
+
+    if (header.classList.contains('collapsed')) {
+        header.classList.remove('collapsed');
+        expandBtn.textContent = 'Expand';
+        navLinks.style.display = 'flex';
+    } else {
+        header.classList.add('collapsed');
+        expandBtn.textContent = 'Collapse';
+        navLinks.style.display = 'none';
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const homeLink = document.getElementById('homeLink');
     const articleLink = document.getElementById('articleLink');

@@ -367,6 +367,17 @@ footer {
     left: 0;
 }
 
+/* For showing expand in mobile */
+header.collapsed {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expand-btn {
+    color: cyan;
+    cursor: pointer;
+}
+
 /* For adjust in mobile */
 @media screen and (max-width: 768px) {
     header {
@@ -374,11 +385,19 @@ footer {
         padding: 10px;
     }
 
+    .contact-form, .contact-info {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+    
+    header.collapsed .nav-links {
+        display: none;
+    }
+
     .nav-links {
-        flex-direction: column; 
-        gap: 10px; 
-        margin-left: 0;
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .nav-links a {
