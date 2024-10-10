@@ -1,14 +1,14 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0; /* Ensure padding is 0 */
+    padding: 0;
     color: white;
     background-image: url("Pictures/Oval.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    min-height: 100vh; /* Optional: Ensure body takes at least the full height */
+    min-height: 100vh;
 }
 
 
@@ -116,7 +116,7 @@ header {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    margin-bottom: 50px; /* Add margin bottm to avoid overlap with fixed footer */
+    margin-bottom: 50px; /* Add margin bottom to avoid overlap with fixed footer */
 }
 
 .image-grid {
