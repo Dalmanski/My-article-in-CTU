@@ -18,7 +18,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     z-index: -1;
 }
@@ -29,20 +29,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: black;
-    border-left: 2px;  
-    border-right: 2px; 
-    border-bottom: 2px solid cyan;
+    background-color: #1a1a1a; 
+    border-bottom: 2px solid #333; 
     position: fixed;  
     top: 0;
     left: 0;
-    right: 0; /* Full width */
+    right: 0;
     z-index: 100;
 }
 
 .logo {
     font-size: 1.5rem;
-    color: cyan;
 }
 
 .nav-links {
@@ -53,21 +50,18 @@ header {
 }
 
 .nav-links a {
-    color: cyan;
+    color: white;
     border-radius: 10px;
     text-decoration: none;
     padding: 10px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .nav-links a:hover {
-    color: black;
-    background-color: cyan;
+    color: cyan;
 }
 
 /* Home Section Design */
-
-
 #homeSection, #aboutSection {
     text-align: center;
 }
@@ -109,16 +103,13 @@ header {
 
 /* Article Section Design */
 #articleSection {
-    max-width: 1200px;
-    margin: 20px auto;
+    margin-top: 50px;
     padding: 20px;
-    margin-bottom: 50px; /* Add margin bottom to avoid overlap with fixed footer */
 }
 
 .page-title {
     text-align: center;
-    color: cyan;
-    padding: 50px; /* Add top padding to avoid overlap with fixed header */
+    padding: 10px;
     font-size: 2.5rem;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px black;
@@ -126,24 +117,26 @@ header {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Set 2 columns */
-    gap: 40px;
+    grid-template-columns: repeat(4, 1fr); /* Set 4 columns */
+    gap: 20px;
 }
 
 .image-section {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 10px;
-    border: 2px solid cyan;
-    box-shadow: 0 0 20px black;
+    border: 2px solid #444; 
+    box-shadow: 0 0 20px #111; 
 }
 
 .image-section img {
     width: 100%;
     height: auto;
     display: block;
-    border-bottom: 2px solid cyan;
+    border-radius: 20px;
+    border-bottom: 2px solid #444; 
     cursor: pointer;
 }
 
@@ -152,9 +145,8 @@ header {
 }
 
 .title {
-    background-color: rgba(26, 51, 52, 0.5);
+    background-color: rgba(54, 54, 54, 0.7); 
     border-radius: 30px;
-    color: #0df2f2;
     font-weight: bold;
     padding: 10px;
     text-align: center;
@@ -165,7 +157,7 @@ header {
 .description {
     padding: 15px;
     color: #b8b8b8;
-    font-size: 1.1rem;
+    font-size: 16px;
     text-align: justify;
     line-height: 1.6;
 }
@@ -176,9 +168,9 @@ header {
     margin: 100px auto;
     padding: 20px;
     max-width: 1200px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid cyan;
-    box-shadow: 0 0 20px black;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: 2px solid #444; 
+    box-shadow: 0 0 20px #111; 
 }
 
 /* Contact Us Section Design */
@@ -187,7 +179,6 @@ header {
 }
 
 .contact-form h2, .contact-info h2 {
-    color: cyan;
     text-align: center;
 }
 
@@ -204,9 +195,9 @@ header {
 .contact-form input, .contact-form textarea {
     padding: 10px;
     margin-bottom: 20px;
-    border: 2px solid cyan;
+    border: 2px solid #444; 
     border-radius: 5px;
-    background-color: black;
+    background-color: #151515;
     color: white;
     outline: none;
     resize: vertical;
@@ -214,7 +205,6 @@ header {
 
 .contact-form button {
     padding: 10px;
-    background-color: cyan;
     color: black;
     font-size: 1rem;
     font-weight: bold;
@@ -224,7 +214,7 @@ header {
 }
 
 .contact-form button:hover {
-    background-color: #0df2f2;
+    background-color: white; 
 }
 
 .contact-info h2 {
@@ -246,7 +236,7 @@ header {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    color: cyan;
+    color: white;
 }
 
 /* When click image on Article */
@@ -261,7 +251,7 @@ header {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0, 0, 0, 0.9); 
 }
 
 .modal-content-in-img {
@@ -276,13 +266,12 @@ header {
     max-width: 400px;
     margin: 100px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 2px solid cyan;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 2px solid #444;
     border-radius: 10px;
 }
 
 .modal-content-in-form h2 {
-    color: cyan;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -301,7 +290,7 @@ header {
 .modal-content-in-form input {
     padding: 10px;
     margin: 10px 0;
-    border: 2px solid cyan;
+    border: 2px solid #444;
     border-radius: 5px;
     background-color: transparent;
     color: white;
@@ -310,7 +299,6 @@ header {
 
 .modal-content-in-form button {
     padding: 10px;
-    background-color: cyan;
     color: black;
     font-size: 1rem;
     font-weight: bold;
@@ -322,14 +310,14 @@ header {
 }
 
 .modal-content-in-form button:hover {
-    background-color: #0df2f2;
+    background-color: white
 }
 
 /* Signup link style */
 a#signupLink {
-    color: cyan;
     cursor: pointer;
     text-decoration: none;
+    color: cyan;
 }
 
 a#signupLink:hover {
@@ -357,10 +345,10 @@ label {
 footer {
     text-align: center;
     padding: 10px;
-    color: rgba(0, 255, 255, 0.4);
+    color: rgba(147, 147, 147, 0.4);
     margin-top: 20px;
-    border-top: 2px solid cyan;
-    background-color: black;
+    border-top: 2px solid #444;
+    background-color: #1a1a1a; 
     position: fixed;
     bottom: 0;
     right: 0;
@@ -383,7 +371,6 @@ header.expanded {
     position: absolute;
     right: 50px;
     top: 10px;
-    color: cyan;
     background-color: transparent;
     border: none;
     cursor: pointer;

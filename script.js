@@ -65,12 +65,10 @@ function toggleHeader() {
         header.classList.remove('collapsed');
         expandBtn.textContent = 'Close';
         navLinks.style.display = 'flex';
-        header.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
     } else {
         header.classList.add('collapsed');
         expandBtn.textContent = 'Expand';
         navLinks.style.display = 'none';
-        header.style.backgroundColor = 'black';
     }
 }
 
